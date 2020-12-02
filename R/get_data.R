@@ -6,7 +6,7 @@
 #' @export
 #'
 get_data <- function(dataset) {
-  base_url <- "https://github.com/datalorax/sdsr-data/raw/main/data/"
+  base_url <- "https://github.com/datalorax/sds-data/raw/main/data/"
 
   read_csv(paste0(base_url, dataset, ".csv"),
            col_types = cols())
