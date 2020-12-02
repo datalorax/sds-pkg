@@ -1,0 +1,31 @@
+Package: sds
+Type: Package
+Title: Package to accompany the Social Data Science book
+Version: 0.1.0.9000
+Authors@R: c(
+    person(given = "Daniel",
+           family = "Anderson",
+           role = c("aut", "cre"),
+           email = "daniela@uoregon.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0003-4699-4680")),
+    person(given = "Brendan",
+           family = "Cullen",
+           role = "aut",
+           email = "bcullen@uoregon.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0003-4825-132X")),
+    person(given = "Ouafaa",
+           family = "Hmaddi",
+           role = "aut",
+           email = "ohmaddi@uoregon.edu",
+           comment = c(ORCID = "https://orcid.org/0000-0003-1443-4830"))
+    )
+Maintainer: Daniel Anderson <daniela@uoregon.edu>
+Description: Functions to fetch data used in examples in the book. Also includes associated learnr apps. 
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    readr
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
