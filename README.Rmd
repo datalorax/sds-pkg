@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# sds
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/datalorax/sds-pkg/workflows/R-CMD-check/badge.svg)](https://github.com/datalorax/sds-pkg/actions)
+<!-- badges: end -->
+
+The **sds** package is designed to accompany the [Social Data Science with R](https://www.sds.pub) book. It includes a function to load data different datasets and will soon include [learnr](https://rstudio.github.io/learnr/) apps for some of the more introductory content.
+
+## Installation
+
+<!-- You can install the released version of sds from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+<!-- install.packages("sds") -->
+<!-- ``` -->
+
+You can install the development version of the package from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("datalorax/sds-pkg")
+```
+## Example
+
+There are multiple datasets used throughout the book. See all the datasets [here](). We can load any of these datasets using the `get_data()` function, passing the name of the dataset. For example.
+
+```{r example}
+library(sds)
+benchmarks <- get_data("benchmarks")
+benchmarks
+```
+
+The `get_data()` function supports any of the following: `"benchmarks"`, `"ds-bowl-2019"`, `"k-entry"`, `"sesame"`, `"state-test"`, `"titanic"`, or `"violence"`, with others likely to be added later. You can then use these datasets to follow along with any of the examples in the book.
