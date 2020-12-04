@@ -4,10 +4,12 @@
 \alias{tic_seconds}
 \title{tictoc seconds}
 \usage{
-tic_seconds(log_n)
+tic_seconds(log_n, digits = 2)
 }
 \arguments{
 \item{log_n}{An integer specifying the number from \code{tictoc::tic.log}}
+
+\item{digits}{Number of digits to round elapsed time to.}
 }
 \description{
 Formats the output from tictoc timings so they can be more easily included in text
