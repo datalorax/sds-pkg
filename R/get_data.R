@@ -8,7 +8,12 @@
 get_data <- function(dataset) {
   base_url <- "https://github.com/datalorax/sds-data/raw/main/data/"
 
-  read_csv(paste0(base_url, dataset, ".csv"),
+  d <- read_csv(paste0(base_url, dataset, ".csv"),
            col_types = cols())
-
+  if(dataset == "ds-bowl-2019") {
+    d$accuracy_group <- factor(d$accuracy_group,
+                               levels = 0:3,
+                               ordered = TRUE)
+  }
+  d
 }
